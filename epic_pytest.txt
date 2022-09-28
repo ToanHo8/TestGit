@@ -1,0 +1,35 @@
+To test run:
+pytest ./SWE_Epic2_2.py --capture=no
+
+===============================================================================
+Epic 3 Test:      pytest ./SWE_Epic2_2.py --capture=no
+- 
+
+
+*******************************************************************************
+Epic 2 Test:
+- Test: option to connect with people -> enter first and last name, if true "They are a part of the InCollege system.", else "They are not yet a part of the InCollege system yet."
+- Test If contact is found, asked to join InCollege and presented with option either "log in", "sign up and join their friends."
+- Test Signed in user options: "post a job" is in "job search/intership". 
+   Each job has 5 parts: a title, a description, the employer, a location, and a salary. 
+   - Test: system will save the name of person who posted the job but not display it.
+   - Test: Must be save and read back into system. Job can be entered but can't currently be displayed. 
+   - Test: System will permit up to 5 jobs to be posted. 
+Infor:
+1. User who has not signed in will see a "success story" displayed on home screen. Provided with option to watch video -> when select a message: "Video is now playing"
+2. CreateAcc: new account ask for "first name" and "last name."
+3. NOTE: anytime the user selects an option that provides them with other options, one of those new options will be to go back up one level to where they came from.
+
+
+********************************************************************************
+Epic 1 Test:      pytest ./SWE_Epic1_3_1.py --capture=no
+
+-Test created to see if user is creating an account or has an existing one
+- Test created to log in- then see if the password/username are correct
+- Test created to see is username is valid
+-Test created for successful login
+-Test created to ensure password meets requirements-at least 8 characters, max.12 characters, 1 capital letter, 1 digit, and 1 special character)
+- Test created to ensure less than 6 attempts at creating an account
+Test created to see is user would like to search for a job, find someone they know, or learn a new skill
+- Test created to list 5 skills if learn a new skill is selected
+-Test to print under construction when needed
