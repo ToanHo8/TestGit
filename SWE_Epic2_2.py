@@ -279,4 +279,3 @@ def test_jobSearch():
     countJob = 6
     assert countJob > 5
     print("All permitted job are create, please come back later")
-    
