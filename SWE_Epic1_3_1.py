@@ -107,14 +107,16 @@ def LogIn():
             print("\n*** Incorrect username/password, please try again. ***")
             continue
 
-#THIS MUST BE MAIN FUNC
+#THIS IS MAIN FUNC
 #Using existing InCollege account or Creating a new account
-LogOption =str(input("\nDo you have an InCollege account?\n"
-                     "Press Y to login or N to create a new account: "))
-if LogOption == "Y" or LogOption == "y":
-        LogIn()
-if LogOption == "N" or LogOption == "n":
-    CreateAcc()
+def main():
+    LogOption =str(input("\nDo you have an InCollege account?\n"
+                        "Press Y to login or N to create a new account: "))
+    if LogOption == "Y" or LogOption == "y":
+            LogIn()
+    if LogOption == "N" or LogOption == "n":
+        CreateAcc()
+main()
 
 #Test account login- make sure user states whether they have an InCollege account
 def test_Login():
@@ -151,5 +153,3 @@ def test_additionalOptions():
     skill="coding practice"
     assert skill==("coding practice" or "new language" or "jira" or "github" or "excel")
     print("Under construction")
-
-  
